@@ -1,0 +1,33 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../RSIC_V.srcs/sources_1/dut/ALU.sv" \
+"../../../../RSIC_V.srcs/sources_1/dut/ALUcontrol.sv" \
+"../../../../RSIC_V.srcs/sources_1/dut/Adder4.sv" \
+"../../../../RSIC_V.srcs/sources_1/dut/BranchComparasion.sv" \
+"../../../../RSIC_V.srcs/sources_1/dut/BranchControl.sv" \
+"../../../../RSIC_V.srcs/sources_1/dut/ControlUnit.sv" \
+"../../../../RSIC_V.srcs/sources_1/pipeline/Control_EX_MEM.sv" \
+"../../../../RSIC_V.srcs/sources_1/pipeline/Control_ID_EX.sv" \
+"../../../../RSIC_V.srcs/sources_1/pipeline/Control_MEM_WB.sv" \
+"../../../../RSIC_V.srcs/sources_1/dut/DUT.sv" \
+"../../../../RSIC_V.srcs/sources_1/dut/DataMemory.sv" \
+"../../../../RSIC_V.srcs/sources_1/dut/Datapath.sv" \
+"../../../../RSIC_V.srcs/sources_1/pipeline/EX_MEM.sv" \
+"../../../../RSIC_V.srcs/sources_1/pipeline/ForwardingUnit.sv" \
+"../../../../RSIC_V.srcs/sources_1/pipeline/HazardUnit.sv" \
+"../../../../RSIC_V.srcs/sources_1/pipeline/ID_EX.sv" \
+"../../../../RSIC_V.srcs/sources_1/pipeline/IF_ID.sv" \
+"../../../../RSIC_V.srcs/sources_1/dut/ImmGen.sv" \
+"../../../../RSIC_V.srcs/sources_1/dut/InstrcutionMemory.sv" \
+"../../../../RSIC_V.srcs/sources_1/pipeline/MEM_WB.sv" \
+"../../../../RSIC_V.srcs/sources_1/dut/Mux2.sv" \
+"../../../../RSIC_V.srcs/sources_1/dut/Mux3.sv" \
+"../../../../RSIC_V.srcs/sources_1/dut/ProgramCounter.sv" \
+"../../../../RSIC_V.srcs/sources_1/dut/RegisterFile.sv" \
+"../../../../RSIC_V.srcs/sources_1/testbench/Testbench.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
